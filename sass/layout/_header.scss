@@ -1,0 +1,10 @@
+.header {
+    position: relative;
+    box-shadow: 0px 5px 10px 0px #d2d2d2 ;
+    &__logo {
+        font-family: 'Shrikhand', cursive;
+        text-align: $text-center;
+        padding: 0.5rem;        
+    }
+}
+

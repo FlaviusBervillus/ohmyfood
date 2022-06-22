@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Three project of OCR",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlaviusBervillus/ohmyfood.git"
+  },
+  "author": "It's me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlaviusBervillus/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/FlaviusBervillus/ohmyfood#readme"
+}

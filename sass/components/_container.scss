@@ -1,0 +1,28 @@
+// Partie de la recherche
+.search {
+    @extend %textcenter;
+    padding: 1rem;
+    background-color:map-get($color, search );
+    &__input {
+        border: none;
+        background-color: map-get($color, search);
+        font-weight: map-get($weight, five );
+    }
+}
+
+.discovery {
+    &__title {
+        @extend %textcenter;
+        padding: 3rem 3rem 1rem 3rem;
+        font-weight: map-get($weight, eight);
+    }
+    &__subtitle {
+        font-weight: map-get($weight, one );
+        padding: 0rem 1rem 2rem 1rem;
+        @extend %textcenter;
+    }
+    &__btn {
+        @extend %textcenter;
+    }
+
+}
