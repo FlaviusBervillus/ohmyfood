@@ -23,6 +23,12 @@
     }
     &__btn {
         @extend %textcenter;
+        height: 100px;
+        width: 100px;
+        background: map-get($color, linard);
+        padding: 2rem;
+        border-radius: 50px 50px 50px 50px;
+
     }
 
 }
