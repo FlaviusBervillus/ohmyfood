@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;800&family=Shrikhand&display=swap");
-.discovery__btn, .discovery__subtitle, .discovery__title, .search {
+.discovery__subtitle, .discovery__title, .search {
   text-align: center;
 }
 
@@ -28,6 +28,10 @@
   font-weight: 500;
 }
 
+.discovery {
+  background-color: rgb(246, 246, 246);
+  height: 17rem;
+}
 .discovery__title {
   padding: 3rem 3rem 1rem 3rem;
   font-weight: 800;
@@ -36,12 +40,20 @@
   font-weight: 100;
   padding: 0rem 1rem 2rem 1rem;
 }
-.discovery__btn {
-  height: 100px;
-  width: 100px;
+.discovery__btncontainer {
+  text-align: center;
+}
+.discovery__btncontainer > button {
   background: linear-gradient(to bottom right, #E770DA, #9D5ADC);
-  padding: 2rem;
-  border-radius: 50px 50px 50px 50px;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px 30px 30px 30px;
+  align-items: center;
+  border: none;
+}
+
+.operation__title {
+  padding: 3rem 0rem 0rem 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
