@@ -11,6 +11,8 @@
 }
 
 .discovery {
+    background-color: map-get($color, discovery );
+    height: 17rem;
     &__title {
         @extend %textcenter;
         padding: 3rem 3rem 1rem 3rem;
@@ -21,8 +23,22 @@
         padding: 0rem 1rem 2rem 1rem;
         @extend %textcenter;
     }
-    &__btn {
-        @extend %textcenter;
+    &__btncontainer {
+        text-align: center;
+        > button {
+            background: map-get($color, linard);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px 30px 30px 30px;
+            align-items: center;
+            border: none;
+        }
+    }
+}
+
+.operation {
+    &__title {
+        padding: 3rem 0rem 0rem 1.5rem;
     }
 
 }
