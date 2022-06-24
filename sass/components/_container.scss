@@ -77,19 +77,28 @@
     &__title {
         padding: 3rem 0rem 0rem 1.5rem;
     }
+    &__container {
+        padding: 1rem 1rem 1rem 1rem;
+    }
 }
 
 .card__restaurant {
     margin: 1.5rem;
     border-radius: 20px;
     background-color: map-get($color, blanc );
+    position: relative;
     &__new {
-        position: relative;
-        width: 10px;
-        height: 10px;
-        background-color: antiquewhite;
-        top: 3rem;
-        left: 70%;
+        position: absolute;
+        width: 85px;
+        height: 30px;
+        background-color: map-get($color, bgNew);
+        right: 1rem;
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        color: map-get($color, new);
     }
     > img {
         width: 100%;
