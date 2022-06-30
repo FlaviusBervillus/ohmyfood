@@ -1,0 +1,27 @@
+.footer {
+    background-color: map-get($color, fColor );
+    &__container{
+        padding-bottom: 40px;
+    }
+    &__list{        
+        > li {
+            list-style-type: none;
+            color: map-get($color, blanc );
+            padding-bottom: 5px;
+        }
+    }
+    &__logo {
+        color: map-get($color, blanc );
+        font-family: 'Shrikhand', cursive;
+        padding: 1rem 0rem 1rem 2.5rem;     
+    }
+    &__link{
+        text-decoration: none;
+        color: map-get($color, blanc );
+        text-align: center;
+    }
+    &__icon {
+        padding-right: 10px;
+        width: 1rem;
+    }
+}
