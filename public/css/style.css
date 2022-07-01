@@ -24,16 +24,16 @@ body {
 
 .search {
   padding: 1rem;
-  background-color: rgb(234, 234, 234);
+  background-color: rgb(229, 229, 229);
 }
 .search__input {
   border: none;
-  background-color: rgb(234, 234, 234);
+  background-color: rgb(229, 229, 229);
   font-weight: 500;
 }
 
 .discovery {
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(244, 244, 244);
   height: 17rem;
 }
 .discovery__title {
@@ -61,10 +61,10 @@ body {
   padding: 3rem 0rem 0rem 1.5rem;
 }
 .operation__cardcontainer > .card {
-  background-color: rgb(246, 246, 246);
-  margin: 1rem 1rem 1rem 2.2rem;
+  background-color: rgb(244, 244, 244);
   padding: 1.5rem;
   border-radius: 20px 20px 20px 20px;
+  margin: 1rem 1rem 1rem 2.2rem;
   box-shadow: 0px 3px 5px 0px #bdc2b8;
 }
 .operation__cardcontainer > .card > .operation__icone {
@@ -87,7 +87,7 @@ body {
 }
 
 .restaurant {
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(244, 244, 244);
 }
 .restaurant__title {
   padding: 3rem 0rem 0rem 1.5rem;
@@ -137,8 +137,17 @@ img {
   height: 16rem;
 }
 
+.card {
+  background-color: rgb(244, 244, 244);
+  padding: 1.5rem;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 3px 5px 0px #bdc2b8;
+  margin: 1rem 0rem;
+  background-color: rgb(255, 255, 255);
+}
+
 .container {
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(244, 244, 244);
   padding: 30px 15px;
   border-radius: 40px 40px 0 0;
   position: relative;
@@ -154,16 +163,27 @@ img {
 }
 .container__subTitle {
   font-weight: lighter;
+  position: relative;
+  padding-bottom: 0.5rem;
 }
-.container__entree > .card {
-  background-color: rgb(246, 246, 246);
-  padding: 1.5rem;
-  border-radius: 20px 20px 20px 20px;
-  box-shadow: 0px 3px 5px 0px #bdc2b8;
+.container__subTitle::after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
-.container__entree > .card > .operation__icone {
-  margin-right: 0.5rem;
-  color: rgb(128, 128, 128);
+.container > .discovery__btncontainer {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+.container > .discovery__btncontainer > button {
+  padding: 1rem 3rem;
+}
+.container__plats {
+  margin-bottom: 3rem;
 }
 
 .footer {

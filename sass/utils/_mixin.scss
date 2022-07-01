@@ -5,3 +5,9 @@
 @mixin box-shadox {
     box-shadow:0px 3px 5px 0px #bdc2b8;
 }
+
+@mixin card {
+    background-color: map-get($color, discovery);
+    padding: 1.5rem;
+    border-radius: 20px 20px 20px 20px;
+}

@@ -43,10 +43,8 @@
     }
     &__cardcontainer {
         > .card {
-            background-color: map-get($color, discovery);
+            @include card;
             margin: 1rem 1rem 1rem 2.2rem;
-            padding: 1.5rem;
-            border-radius: 20px 20px 20px 20px;
             @include box-shadox;
             > .operation__icone {
                 margin-right: 0.5rem;
