@@ -1,4 +1,3 @@
-// Partie de la recherche
 .search {
     @extend %textcenter;
     padding: 1rem;
@@ -10,6 +9,7 @@
     }
 }
 
+// ------------
 .discovery {
     background-color: map-get($color, discovery );
     height: 17rem;
