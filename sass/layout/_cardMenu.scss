@@ -8,7 +8,18 @@ img {
     @include card;
     @include box-shadox;
     margin: 1rem 0rem;
+    padding: .8rem;
     background-color: rgb(255, 255,255);
+    &__title {
+        margin-bottom: .5rem;
+    }
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        > p {
+            font-weight: lighter;
+        }
+    }
 }
 
 .container {
@@ -21,6 +32,7 @@ img {
     &__title {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 2rem;
         > h2 {
             font-family: 'Shrikhand', cursive;
         }        

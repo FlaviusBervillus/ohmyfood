@@ -1,3 +1,12 @@
+.heart__icone {
+    @include heart;
+    &:active {
+        background: linear-gradient(#869356DC, #FF79DA);
+        font-weight: 600;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
 .search {
     @extend %textcenter;
     padding: 1rem;
@@ -112,5 +121,8 @@
             top:2rem;
             left: 80%;
         }
+    }
+    &__town{
+        font-weight: lighter;
     }
 }
