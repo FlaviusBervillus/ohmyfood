@@ -26,7 +26,7 @@ body {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.heart__icone:active {
+.heart__icone:hover {
   background: linear-gradient(rgba(134, 147, 86, 0.862745098), #FF79DA);
   font-weight: 600;
   -webkit-background-clip: text;

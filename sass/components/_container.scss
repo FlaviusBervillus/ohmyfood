@@ -1,6 +1,6 @@
 .heart__icone {
     @include heart;
-    &:active {
+    &:hover {
         background: linear-gradient(#869356DC, #FF79DA);
         font-weight: 600;
         -webkit-background-clip: text;
