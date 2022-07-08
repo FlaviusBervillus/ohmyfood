@@ -4,23 +4,63 @@ img {
     height: 16rem;
 }
 
-.card {
+.cardMenu {
     @include card;
     @include box-shadox;
+    @include flex;
     margin: 1rem 0rem;
     padding: .8rem;
     background-color: rgb(255, 255,255);
+    overflow: hidden;
+    justify-content: space-between;
+    animation: cardAnimation .6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+    &__info {
+        @include flex-item-end;
+        flex: 1;
+    }
     &__title {
         margin-bottom: .5rem;
     }
     &__description {
-        display: flex;
-        justify-content: space-between;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
         > p {
             font-weight: lighter;
         }
     }
+    &__price {
+        margin-right: 2rem;
+        @include flex-item-end;
+    }
+    &__check {
+        @include flex-content-center;
+        align-items: center;
+        background-color: #99e2d0;
+        color: white;
+        margin: -0.8rem -4.8rem -0.8rem -1rem;
+        width: 4rem;
+        transition-duration: .5s;
+        &__icon {
+            transform: rotate(180deg);
+            cursor: pointer;
+        }
+    }
+    &:hover .cardMenu__check {
+        margin-right: -.8rem;
+        &__icon {
+            transform: rotate(0deg);
+            transition-duration: .5s;
+            //transform-origin: ;
+
+        }
+    }
 }
+
+
 
 .container {
     background-color: map-get($color, discovery );
@@ -30,7 +70,7 @@ img {
     z-index: 1;
     margin-top: -3rem;
     &__title {
-        display: flex;
+        @include flex;
         justify-content: space-between;
         margin-bottom: 2rem;
         > h2 {
@@ -63,7 +103,26 @@ img {
         margin-bottom: 3rem;
     }
 }
+.delay1 {
+    animation-delay: .1s;
+}
 
+.delay2 {
+    animation-delay: .2s;
+}
 
+.delay3 {
+    animation-delay: .3s;
+}
+
+@keyframes cardAnimation {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    
+}
 
 

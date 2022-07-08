@@ -151,24 +151,63 @@ img {
   height: 16rem;
 }
 
-.card {
+.cardMenu {
   background-color: rgb(244, 244, 244);
   padding: 1.5rem;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 0px 3px 5px 0px #bdc2b8;
+  display: flex;
   margin: 1rem 0rem;
   padding: 0.8rem;
   background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  justify-content: space-between;
+  animation: cardAnimation 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
 }
-.card__title {
+.cardMenu__info {
+  display: flex;
+  align-items: flex-end;
+  flex: 1;
+}
+.cardMenu__title {
   margin-bottom: 0.5rem;
 }
-.card__description {
-  display: flex;
-  justify-content: space-between;
+.cardMenu__description {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.card__description > p {
+.cardMenu__description > p {
   font-weight: lighter;
+}
+.cardMenu__price {
+  margin-right: 2rem;
+  display: flex;
+  align-items: flex-end;
+}
+.cardMenu__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  color: white;
+  margin: -0.8rem -4.8rem -0.8rem -1rem;
+  width: 4rem;
+  transition-duration: 0.5s;
+}
+.cardMenu__check__icon {
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+.cardMenu:hover .cardMenu__check {
+  margin-right: -0.8rem;
+}
+.cardMenu:hover .cardMenu__check__icon {
+  transform: rotate(0deg);
+  transition-duration: 0.5s;
 }
 
 .container {
@@ -212,6 +251,26 @@ img {
   margin-bottom: 3rem;
 }
 
+.delay1 {
+  animation-delay: 0.1s;
+}
+
+.delay2 {
+  animation-delay: 0.2s;
+}
+
+.delay3 {
+  animation-delay: 0.3s;
+}
+
+@keyframes cardAnimation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .footer {
   background-color: rgb(40, 40, 40);
 }
