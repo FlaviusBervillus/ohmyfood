@@ -1,3 +1,9 @@
+.arrow__header {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
 img {
     object-fit: cover;
     width: 100%;
@@ -113,6 +119,30 @@ img {
 
 .delay3 {
     animation-delay: .3s;
+}
+
+.delay4 {
+    animation-delay: .4s;
+}
+
+.delay5 {
+    animation-delay: .5s;
+}
+
+.delay6 {
+    animation-delay: .6s;
+}
+
+.delay7 {
+    animation-delay: .7s;
+}
+
+.delay8 {
+    animation-delay: .8s;
+}
+
+.delay9 {
+    animation-delay: .9s;
 }
 
 @keyframes cardAnimation {
