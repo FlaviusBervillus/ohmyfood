@@ -177,9 +177,15 @@ img {
   display: flex;
   align-items: flex-end;
   flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .cardMenu__title {
   margin-bottom: 0.5rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .cardMenu__description {
   white-space: nowrap;
@@ -188,6 +194,9 @@ img {
 }
 .cardMenu__description > p {
   font-weight: lighter;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .cardMenu__price {
   margin-right: 2rem;

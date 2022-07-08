@@ -26,16 +26,17 @@ img {
     &__info {
         @include flex-item-end;
         flex: 1;
+        @include overflow;
     }
     &__title {
         margin-bottom: .5rem;
+        @include overflow;
     }
     &__description {
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
+        @include overflow;
         > p {
             font-weight: lighter;
+            @include overflow;
         }
     }
     &__price {
@@ -60,8 +61,6 @@ img {
         &__icon {
             transform: rotate(0deg);
             transition-duration: .5s;
-            //transform-origin: ;
-
         }
     }
 }
