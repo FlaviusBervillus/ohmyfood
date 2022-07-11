@@ -35,13 +35,18 @@
     &__btncontainer {
         text-align: center;
         > button {
-            background: map-get($color, linard);
+            background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
             @include text-color;
             padding: 0.8rem 1.5rem;
             border-radius: 30px 30px 30px 30px;
             align-items: center;
+            background-color: #686868;
             border: none;
             @include box-shadox;
+            &:hover {
+                background-color: #fff;
+                box-shadow: 0.25rem 0.25rem 8px rgb(0 0 0 / 50%);
+            }
         }
     }
 }
