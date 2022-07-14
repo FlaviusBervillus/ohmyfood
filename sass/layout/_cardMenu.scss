@@ -53,6 +53,7 @@ img {
         transition-duration: .5s;
         &__icon {
             transform: rotate(180deg);
+            transition-duration: .5s;
             cursor: pointer;
         }
     }
@@ -64,8 +65,6 @@ img {
         }
     }
 }
-
-
 
 .container {
     background-color: map-get($color, discovery );

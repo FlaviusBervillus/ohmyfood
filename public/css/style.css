@@ -22,6 +22,28 @@ body {
   padding: 0.5rem;
 }
 
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 .loader__container {
   width: 100%;
   height: 100%;
@@ -64,28 +86,6 @@ body {
   transform-origin: center center;
 }
 
-@keyframes loader {
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotationBack {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
 .heart__icone {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -177,15 +177,18 @@ body {
 }
 
 .card__restaurant {
-  margin: 1.5rem;
   border-radius: 20px;
   background-color: white;
   position: relative;
   text-decoration: none;
   color: black;
+  display: block;
+  margin-bottom: 2rem;
 }
 .card__restaurant__new {
   position: absolute;
+  right: 2rem;
+  top: 1rem;
   padding: 0.5rem;
   background-color: rgb(137, 221, 198);
   border-radius: 3px;
@@ -198,13 +201,12 @@ body {
   border-radius: 20px 20px 0 0;
 }
 .card__restaurant__explication {
-  margin: 0;
-  padding: 0rem 0rem 1rem 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 .card__restaurant__explication > .heart__icone {
   position: relative;
-  top: 2rem;
-  left: 80%;
 }
 .card__restaurant__town {
   font-weight: lighter;
@@ -280,6 +282,7 @@ img {
 }
 .cardMenu__check__icon {
   transform: rotate(180deg);
+  transition-duration: 0.5s;
   cursor: pointer;
 }
 .cardMenu:hover .cardMenu__check {
