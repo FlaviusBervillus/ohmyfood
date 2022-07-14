@@ -1,3 +1,13 @@
+@keyframes cardAnimation {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    
+}
+
 .arrow__header {
     position: absolute;
     top: 25%;
@@ -143,15 +153,28 @@ img {
     animation-delay: .9s;
 }
 
-
-@keyframes cardAnimation {
-        0% {
-            transform: scale(0);
-        }
-        100% {
-            transform: scale(1);
-        }
-    
+@media  screen and (min-width:1064px) {
+    .container {
+        width: 80%;
+        left: 9%;
+    }
 }
+@media screen and (min-width: 1500px) {
+    .container {
+        margin-bottom: 3rem;
+        border-radius: 40px 40px 40px 40px;
+        &__flex {
+            display: flex;
+            justify-content: space-around;
+        }
+        &__plats {
+            width: 30%;
+        }
+        > .discovery__btncontainer {
+            margin-top: -1rem;
+            margin-bottom: 0;
+        }
+    }
 
+}
 

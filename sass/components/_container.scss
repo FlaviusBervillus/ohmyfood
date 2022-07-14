@@ -186,15 +186,44 @@
         padding: 1rem;
         display: flex;
         justify-content: space-between;
-        // padding: 0rem 0rem 1rem 1rem;
-        // margin: -1rem -1rem 0rem 0rem;
         > .heart__icone {
             position:relative;
-            // top:2rem;
-            // left: 80%;
         }
     }
     &__town{
         font-weight: lighter;
     }
 }
+
+@media screen and (min-width:1064px) {
+    .restaurant {
+        &__container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+    .card__restaurant {
+        width: 50%;
+        margin: 1rem;
+    }
+    .operation {
+        &__cardcontainer {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+             > .card {
+                width:30%;
+                padding: 1rem;
+                display: flex;
+                // justify-content: flex-start;
+                &::before{
+                    position: relative;
+                    left: -1.7rem;
+                }
+                &__span {
+                    padding: .2rem;
+                }
+            }
+        }
+    }
+}   
